@@ -3,6 +3,13 @@
 
 Generate Clone Hero drum charts from audio.
 
+### Highlights
+
+- Automatic audio conversion to `song.ogg` using FFmpeg
+- Graceful Demucs fallback if no GPU or CLI is available
+- Beat‑accurate SyncTrack and stubbed Star Power phrases
+- 16th‑note quantisation with velocity accents
+
 ## Install
 
 ```bash

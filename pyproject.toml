@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clonehero-drum-auto"
+version = "0.2"
+description = "Generate Clone Hero drum charts from audio."
+requires-python = ">=3.8"
+authors = [{name="CloneHero Drum Auto"}]
+dependencies = [
+    "typer==0.12.3",
+    "librosa==0.10.2",
+    "madmom==0.17.1",
+    "demucs==4.0.0",
+    "pretty_midi==0.2.10",
+    "omnizart==0.4.1",
+    "gradio==4.29.0",
+    "numpy==1.23.0",
+    "cython",
+]
+
+[project.scripts]
+clonehero-drum-auto = "clonehero_drum_auto.cli:app"
